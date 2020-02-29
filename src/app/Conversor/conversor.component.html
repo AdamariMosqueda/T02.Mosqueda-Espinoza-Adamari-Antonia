@@ -1,0 +1,21 @@
+<div class = "container btn-align-center">
+    <br>
+<h2>{{title}}</h2>
+<table style="width:100%">
+    <tr> 
+    <th>
+        Kilometros 
+    </th>
+   <th>
+    <input type="number" id = "Medida1" [(ngModel)] = "UNOInput" required>
+    </th>
+    </tr>
+    <tr>
+<th> Millas </th>
+<th> {{UNOInput *  0.62137}}</th>
+
+</tr>
+</table>
+<button (click) = "Medidas()"> Conversión en consola </button>
+<br><br>
+</div>

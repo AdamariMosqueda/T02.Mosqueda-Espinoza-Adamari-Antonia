@@ -1,0 +1,4 @@
+.flexContainer {
+    background-color: lightpink;
+    flex-direction: column;
+}

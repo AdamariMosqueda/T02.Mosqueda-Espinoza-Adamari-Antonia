@@ -1,0 +1,24 @@
+<div class = "container btn-align-center">
+    <h2>{{title}}</h2>
+    <table style="width:100%">
+    <tr>
+    <th> Dólares </th>
+    <th>
+<input type="number" id = "Dolares" [(ngModel)] = "DolaresInput">
+</th>
+</tr>
+<tr>
+<th> Tipo de cambio </th>
+<th>
+<input type="decimal" id = "TC" [(ngModel)] = "TCInput" >
+</th>
+</tr>
+<tr>
+    <th> Pesos </th>
+    <th>
+    {{DolaresInput*TCInput}}
+    </th> </tr> 
+</table>
+<button (click) = "Money()">Conversión en consola </button>
+<br><br>
+</div>

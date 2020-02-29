@@ -1,0 +1,21 @@
+<div class = "container btn-align-center">
+   <br>
+    <h2>{{title}}</h2>
+    
+    <table style = "width:100%">
+        <tr>
+    <th> Grados Fahrenheit </th>
+  <th>
+    <input type="number" id = "Farenheit" [(ngModel)] = "FInput">
+</th>
+</tr>
+<tr>
+<th> Grados Celsius </th>
+<th>
+{{(FInput - 32) *(5/9)}}
+</th>
+</tr>
+</table>
+<button (click) = "Grados()">Conversión en consola</button>
+<br><br>
+</div>
